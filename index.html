@@ -3,49 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dashboard UI</title>
+  <title>Professional Dashboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="app">
+<div class="layout">
+
   <aside class="sidebar">
-    <h2 class="logo">DashUI</h2>
-    <a class="active">Dashboard</a>
-    <a>Analytics</a>
-    <a>Projects</a>
-    <a>Settings</a>
+    <div class="brand">Acme Corp</div>
+    <nav>
+      <a class="active">Overview</a>
+      <a>Reports</a>
+      <a>Customers</a>
+      <a>Projects</a>
+      <a>Settings</a>
+    </nav>
   </aside>
 
-  <main class="main">
-    <header class="topbar">
-      <h1>Dashboard</h1>
-      <button class="primary">New Project</button>
+  <main class="content">
+
+    <header class="header">
+      <div>
+        <h1>Overview</h1>
+        <p>Company performance summary</p>
+      </div>
+      <button class="btn-primary">Create Report</button>
     </header>
 
-    <section class="stats">
-      <div class="card">
-        <h3>Total Users</h3>
-        <p>12,480</p>
+    <section class="metrics">
+      <div class="metric">
+        <span>Revenue</span>
+        <strong>$124,300</strong>
       </div>
-      <div class="card">
-        <h3>Revenue</h3>
-        <p>$48,200</p>
+      <div class="metric">
+        <span>Active Users</span>
+        <strong>8,421</strong>
       </div>
-      <div class="card">
-        <h3>Active Projects</h3>
-        <p>36</p>
+      <div class="metric">
+        <span>Conversion Rate</span>
+        <strong>4.6%</strong>
       </div>
     </section>
 
-    <section class="panel">
+    <section class="card">
       <h2>Recent Activity</h2>
-      <ul>
-        <li>New user signed up</li>
-        <li>Project “UI Redesign” updated</li>
-        <li>Payment received</li>
-      </ul>
+      <table>
+        <tr>
+          <th>User</th>
+          <th>Action</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>Jane Cooper</td>
+          <td>Created new project</td>
+          <td class="success">Completed</td>
+        </tr>
+        <tr>
+          <td>Michael Scott</td>
+          <td>Updated report</td>
+          <td class="pending">Pending</td>
+        </tr>
+        <tr>
+          <td>Dwight Schrute</td>
+          <td>Deleted task</td>
+          <td class="failed">Failed</td>
+        </tr>
+      </table>
     </section>
+
   </main>
 </div>
 

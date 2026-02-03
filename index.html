@@ -2,43 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Website</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern UI Website</title>
 
-  <header>
-    <h1>My Website</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
 
-  <main>
-    <section id="home">
-      <h2>Welcome 👋</h2>
-      <p>This is my first website.</p>
-      <button onclick="showMessage()">Click me</button>
-    </section>
+    body {
+      background: #f5f7fb;
+      color: #333;
+    }
 
-    <section id="about">
-      <h2>About</h2>
-      <p>I’m learning how to build websites.</p>
-    </section>
+    header {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: example@email.com</p>
-    </section>
-  </main>
+    header h1 {
+      font-size: 2.5rem;
+    }
 
-  <footer>
-    <p>© 2026 My Website</p>
-  </footer>
+    header p {
 
-  <script src="script.js"></script>
-</body>
-</html>

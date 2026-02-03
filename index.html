@@ -1,75 +1,156 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AutoLux — Premium Cars</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+:root {
+  --dark: #0b0b0b;
+  --gray: #6b7280;
+  --light: #f9fafb;
+  --accent: #c1121f;
+}
 
-<header class="navbar">
-  <div class="logo">AutoLux</div>
-  <nav>
-    <a href="#">Models</a>
-    <a href="#">Services</a>
-    <a href="#">About</a>
-    <a href="#" class="btn">Contact</a>
-  </nav>
-</header>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, system-ui, sans-serif;
+}
 
-<section class="hero">
-  <div class="hero-content">
-    <h1>Experience Premium Driving</h1>
-    <p>Luxury, performance, and innovation — all in one place.</p>
-    <button>Explore Models</button>
-  </div>
-</section>
+body {
+  background: white;
+  color: #111;
+}
 
-<section class="cars">
-  <h2>Featured Models</h2>
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 80px;
+  background: var(--dark);
+}
 
-  <div class="car-grid">
-    <div class="car-card">
-      <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Car">
-      <h3>Autolux X7</h3>
-      <p>From $78,000</p>
-    </div>
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+}
 
-    <div class="car-card">
-      <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c" alt="Car">
-      <h3>Autolux S5</h3>
-      <p>From $64,500</p>
-    </div>
+.navbar a {
+  color: #d1d5db;
+  margin-left: 24px;
+  text-decoration: none;
+}
 
-    <div class="car-card">
-      <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d" alt="Car">
-      <h3>Autolux GT</h3>
-      <p>From $92,300</p>
-    </div>
-  </div>
-</section>
+.btn {
+  padding: 8px 16px;
+  border: 1px solid white;
+  border-radius: 6px;
+  color: white !important;
+}
 
-<section class="features">
-  <div class="feature">
-    <h3>Performance</h3>
-    <p>Precision engineering and powerful engines.</p>
-  </div>
-  <div class="feature">
-    <h3>Safety</h3>
-    <p>Advanced driver assistance and safety systems.</p>
-  </div>
-  <div class="feature">
-    <h3>Design</h3>
-    <p>Crafted interiors with premium materials.</p>
-  </div>
-</section>
+/* Hero */
+.hero {
+  height: 85vh;
+  background: url("https://images.unsplash.com/photo-1493238792000-8113da705763") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+}
 
-<footer>
-  <p>© 2026 AutoLux Motors. All rights reserved.</p>
-</footer>
+.hero-content {
+  max-width: 500px;
+  color: white;
+}
 
-<script src="script.js"></script>
-</body>
-</html>
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.hero-content p {
+  color: #e5e7eb;
+  margin-bottom: 30px;
+}
+
+.hero-content button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 14px 26px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Cars */
+.cars {
+  padding: 80px;
+}
+
+.cars h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.car-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.car-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.car-card h3 {
+  padding: 16px;
+}
+
+.car-card p {
+  padding: 0 16px 20px;
+  color: var(--gray);
+}
+
+/* Features */
+.features {
+  background: var(--light);
+  padding: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.feature h3 {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background: var(--dark);
+  color: #9ca3af;
+  text-align: center;
+  padding: 24px;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .hero {
+    padding: 0 40px;
+  }
+
+  .car-grid,
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    padding: 20px 40px;
+  }
+}
 

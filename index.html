@@ -3,64 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nexa — Grow Your Business</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Dashboard UI</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="navbar">
-  <div class="logo">Nexa</div>
-  <nav>
-    <a href="#">Features</a>
-    <a href="#">Pricing</a>
-    <a href="#">About</a>
-    <a href="#" class="btn">Get Started</a>
-  </nav>
-</header>
+<div class="app">
+  <aside class="sidebar">
+    <h2 class="logo">DashUI</h2>
+    <a class="active">Dashboard</a>
+    <a>Analytics</a>
+    <a>Projects</a>
+    <a>Settings</a>
+  </aside>
 
-<section class="hero">
-  <div class="hero-text">
-    <h1>Grow your business<br>with confidence</h1>
-    <p>All-in-one platform to manage, analyze, and scale your workflow.</p>
-    <button>Start Free Trial</button>
-  </div>
-  <div class="hero-image"></div>
-</section>
+  <main class="main">
+    <header class="topbar">
+      <h1>Dashboard</h1>
+      <button class="primary">New Project</button>
+    </header>
 
-<section class="features">
-  <h2>Why teams choose Nexa</h2>
-  <div class="feature-grid">
-    <div class="feature">
-      <h3>📊 Analytics</h3>
-      <p>Real-time insights to track performance and growth.</p>
-    </div>
-    <div class="feature">
-      <h3>⚡ Fast Setup</h3>
-      <p>Get started in minutes, no technical skills required.</p>
-    </div>
-    <div class="feature">
-      <h3>🔒 Secure</h3>
-      <p>Enterprise-grade security you can trust.</p>
-    </div>
-  </div>
-</section>
+    <section class="stats">
+      <div class="card">
+        <h3>Total Users</h3>
+        <p>12,480</p>
+      </div>
+      <div class="card">
+        <h3>Revenue</h3>
+        <p>$48,200</p>
+      </div>
+      <div class="card">
+        <h3>Active Projects</h3>
+        <p>36</p>
+      </div>
+    </section>
 
-<section class="testimonials">
-  <h2>Trusted by 10,000+ teams</h2>
-  <div class="testimonial">
-    <p>“Nexa completely changed how we run our business.”</p>
-    <span>— Alex Morgan, CEO</span>
-  </div>
-</section>
-
-<section class="cta">
-  <h2>Ready to get started?</h2>
-  <button onclick="showAlert()">Create your account</button>
-</section>
-
-<footer>
-  <p>© 2026 Nexa Inc. All rights reserved.</p>
-</footer>
+    <section class="panel">
+      <h2>Recent Activity</h2>
+      <ul>
+        <li>New user signed up</li>
+        <li>Project “UI Redesign” updated</li>
+        <li>Payment received</li>
+      </ul>
+    </section>
+  </main>
+</div>
 
 <script src="script.js"></script>
 </body>
